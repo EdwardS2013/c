@@ -14,7 +14,7 @@ int64_t current_usec(void) {
 }
 
 int mystrlen(const char *str) {
-    return *str ? 1 + mystrlen(str + 1) : 0;
+    return strlen(str);
 }
 
 // copy string from src to dest
